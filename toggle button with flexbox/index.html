@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="myNav">
+        <div class="container">
+            <a href="#" class="logo">BRAND LOGO</a>
+            <div class="toggleContainer">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+
+        </div>
+    </nav>
+    <script>
+        var container = document.querySelector(".toggleContainer");
+        container.addEventListener("click", () => {
+            document.body.classList.toggle("click");
+        });
+    </script>
+</body>
+
+</html>

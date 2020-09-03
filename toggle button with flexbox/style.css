@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.myNav {
+    background: dodgerblue;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    padding: 5px 0px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-family: arial;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+}
+
+.toggleContainer {
+    padding: 5px;
+    border: 2px solid #7ec2f8;
+    border-radius: 3px;
+}
+
+.bar-1,
+.bar-2,
+.bar-3 {
+    width: 30px;
+    height: 5px;
+    background: #c1e3ff;
+    margin: 4px;
+    transition: .4s;
+    border-radius: 2px;
+}
+
+.click .bar-1 {
+    transform: rotate(45deg)translate(8px, 5px);
+}
+
+.click .bar-2 {
+    opacity: 0;
+}
+
+.click .bar-3 {
+    transform: rotate(-47deg)translate(8px, -4px);
+}
